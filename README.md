@@ -1,6 +1,6 @@
 # jenkins_vagrant
 
-El siguiente script fue creado para poder ejecutarse en un entorno linux, sin embargo puede funcionar sin problemas en entornos windows. La unica diferencia esta en que en linux hay que usar el siguiente codigo para poder acceder desde localhost a la virtual (config.vm.network "public_network" ), ingresando a la maquina virtual por SSH y verificar con ifconfig que ip tiene actualmente en el rango de 192.168... .
+El siguiente script fue creado para poder ejecutarse en un entorno linux, sin embargo puede funcionar sin problemas en entornos windows. La unica diferencia esta en que en linux hay que usar el siguiente codigo para poder acceder desde localhost a la virtual (config.vm.network "public_network" ).
 
 ## Requisitos:
 
