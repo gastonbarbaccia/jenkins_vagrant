@@ -23,3 +23,6 @@ sleep 1m
 echo "Installing Jenkins Plugins"
 JENKINSPWD=$(sudo cat /var/lib/jenkins/secrets/initialAdminPassword)
 echo $JENKINSPWD
+
+IP_ADDRESS=$(ip -f inet addr show enp0s8 | sed -En -e 's/.*inet ([0-9.]+).*/\1/p')
+echo "IP de acceso a Jenkins: http://$IP_ADDRESS:8080"
